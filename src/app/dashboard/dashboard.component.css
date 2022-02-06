@@ -1,0 +1,108 @@
+.sidenav-container {
+  height: 100%;
+    background-color: #98FB98;
+
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #00A86B;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.grid-container {
+  margin: 20px;
+  overflow-y: hidden;
+    background-color: #98FB98;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #D0F0C0;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 7px -1px rgba(0,0,0,1), 
+                0 0px 1px 0 rgba(0,0,0,1), 
+                0 3px 10px 0 rgba(0,0,0,1);
+}
+
+.mat-sidenav:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 10px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 6px 10px 0 rgba(0,0,0,1);
+}
+.toolbarTOP{
+  background-color: #00A86B;
+   box-shadow: 0 2px 10px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 6px 10px 0 rgba(0,0,0,1);
+
+}
+
+.button-55 {
+
+  align-self: center;
+  background-color: #E4DCEB;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   box-shadow: 0 1px 1px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 1px 10px 0 rgba(0,0,0,1);
+
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+

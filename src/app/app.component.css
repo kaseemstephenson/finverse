@@ -1,0 +1,50 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.grid-container {
+  margin: 20px;
+  overflow-y: hidden
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 7px -1px rgba(0,0,0,1), 
+                0 0px 1px 0 rgba(0,0,0,1), 
+                0 3px 10px 0 rgba(0,0,0,1);
+}
+
+.mat-sidenav:not([class*=mat-elevation-z]) {
+    box-shadow: 0 2px 10px -1px rgba(0,0,0,1), 
+                0 1px 1px 0 rgba(0,0,0,1), 
+                0 6px 10px 0 rgba(0,0,0,1);
+}

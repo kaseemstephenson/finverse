@@ -1,0 +1,58 @@
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href=dashboard>DASHBOARD</a>
+      <a mat-list-item href="delortool">DELOR TOOL</a>
+            <a mat-list-item href="eztrader">EZ-TRADER</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbarTOP" >
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>FINVERSE</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div id="basee" class="grid-container">
+  <h1 class="mat-h1">- Let's make your life easier.</h1>
+  <mat-grid-list cols="3" rowHeight="320px">
+    <mat-grid-tile *ngFor="let newss of news" [colspan]="1" [rowspan]="2">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{newss.title}}
+           
+
+          </mat-card-title>       
+          <mat-card-subtitle>-{{newss.source_name}},{{newss.date}}</mat-card-subtitle><br>
+
+
+        </mat-card-header>
+  <img mat-card-image src={{newss.image_url}} alt="Photo of a Shiba Inu">
+
+        <mat-card-content class="dashboard-card-content">
+          <p>{{newss.text}}</p>
+          <a href={{newss.news_url}}>
+<button  class="button-55" role="button">Learn More</button></a>
+ 
+  </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
